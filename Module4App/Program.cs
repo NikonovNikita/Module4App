@@ -21,9 +21,9 @@ class MainClass
         }
         else
         {
-            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.BackgroundColor = ConsoleColor.Magenta;
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("Your color is cyan!");
+            Console.WriteLine("Your color is magenta!");
         }
     }
 }
