@@ -9,7 +9,13 @@ class MainClass
         {
             Console.WriteLine(k);
             Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-            switch (Console.ReadLine())
+            var text = Console.ReadLine();
+            if (text == "stop")
+            {
+                Console.WriteLine("Цикл остановлен");
+                break;
+            }
+            switch (text)
             {
                 case "red":
                     Console.BackgroundColor = ConsoleColor.Red;
@@ -48,7 +54,13 @@ class MainClass
         {
             Console.WriteLine(t);
             Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-            switch (Console.ReadLine())
+            var text = Console.ReadLine();
+            if (text == "stop")
+            {
+                Console.WriteLine("Цикл остановлен");
+                break;
+            }
+            switch (text)
             {
                 case "red":
                     Console.BackgroundColor = ConsoleColor.Red;
