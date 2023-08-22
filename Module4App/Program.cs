@@ -3,34 +3,12 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
-
-        int temp;
-
-        for(int i = 0; i <= arr.GetUpperBound(0); i++)
-        {
-            for(int j = 0; j <=arr.GetUpperBound(1); j++)
-            {
-                for(int k = j + 1; k <= arr.GetUpperBound(1); k++)
-                {
-                    if (arr[i, j] > arr[i, k])
-                    {
-                        temp = arr[i, k];
-                        arr[i, k] = arr[i, j];
-                        arr[i, j] = temp;
-                    }
-                }
-            }
-        }
-        foreach (var numbers in arr)
-        {
-            Console.WriteLine(numbers + " ");
-        }
-
-
-
-
-
-
+        (string name, int age) anketa;
+        Console.Write("Введите ваше имя ");
+        anketa.name = Console.ReadLine();
+        Console.Write("Введите ваш возраст ");
+        anketa.age = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ваше имя {0}", anketa.name);
+        Console.WriteLine("Ваш возраст {0}", anketa.age);
     }
 }
