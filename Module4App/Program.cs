@@ -3,21 +3,21 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        int [][] array = new int [3][];
-        array[0] = new int[3] {1, 2, 3 };
-        array[1] = new int[5] {1, 2, 3, 4, 5};
-        array[2] = new int[8] {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] array = new int[] { 1, 2, -9, 3, 5, -7, 0, -1, 2 };
 
-        foreach (var num in array)
+        var numbers = 0;
+
+        for (int i = 0; i < array.Length; i ++)
         {
-            foreach (var item in num)
+            if (array[i] > 0)
             {
-                Console.Write(item + " ");
+                numbers++;
             }
         }
+        Console.WriteLine(numbers);
 
 
-        
+
 
 
 
