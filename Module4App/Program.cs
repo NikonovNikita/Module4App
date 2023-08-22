@@ -3,14 +3,23 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        Console.Write("Введите свое имя ");
-        string name = Console.ReadLine();
-        Console.Write("Буквы вашего имени в обратном порядке: ");
-        for (int i = name.Length - 1; i >= 0; i --)
+        int [][] array = new int [3][];
+        array[0] = new int[3] {1, 2, 3 };
+        array[1] = new int[5] {1, 2, 3, 4, 5};
+        array[2] = new int[8] {1, 2, 3, 4, 5, 6, 7, 8};
+
+        foreach (var num in array)
         {
-            Console.Write(name[i] + " ");
+            foreach (var item in num)
+            {
+                Console.Write(item + " ");
+            }
         }
 
+
         
+
+
+
     }
 }
