@@ -3,15 +3,18 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        int[] array = new int[] { 1, 2, -9, 3, 5, -7, 0, -1, 2 };
+        int[,] arr = { {-5, 6, 9, 1, 2, -3}, {-8, 8, 1, 1, 2, -3} };
 
         var numbers = 0;
 
-        for (int i = 0; i < array.Length; i ++)
+        for(int i = 0; i < arr.GetUpperBound(0) + 1; i++)
         {
-            if (array[i] > 0)
+            for (int j = 0; j < arr.GetUpperBound(1) + 1; j ++)
             {
-                numbers++;
+                if (arr[i, j] > 0)
+                {
+                    numbers++;
+                }
             }
         }
         Console.WriteLine(numbers);
